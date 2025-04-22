@@ -1,0 +1,167 @@
+/* index.css */
+
+/* Global Reset - Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General body styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Styling for the main heading */
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: rgb(41, 158, 225);
+  font-size: 2em;
+}
+
+/* Style for CSV Upload input */
+input[type="file"] {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  display: block;
+  margin: 20px auto;
+  cursor: pointer;
+  width: 250px;
+  border-radius: 5px;
+}
+
+/* Table styling for displaying CSV data */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+table th, table td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+table th {
+  background-color:rgb(41, 158, 225);
+  color: white;
+}
+
+table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+table tr:hover {
+  background-color: #ddd;
+}
+
+table td {
+  word-wrap: break-word;
+  white-space: normal;
+}
+
+/* Pivot table styling */
+#pivotTable table {
+  margin-top: 20px;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#pivotTable th, #pivotTable td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+#pivotTable th {
+  background-color: #3e8e41;
+  color: white;
+}
+
+#pivotTable tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+#pivotTable tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Form controls for selecting pivot fields */
+select {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  margin: 10px 0;
+  display: inline-block;
+  width: 200px;
+  border-radius: 5px;
+}
+
+button {
+  background-color:rgb(41, 158, 225);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+  display: block;
+  margin: 20px auto;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color:rgb(41, 158, 225);
+}
+
+
+body.dark-mode {
+  background-color: #121212;
+  color: white; 
+}
+
+
+body.dark-mode table, body.dark-mode #pivotTable table {
+  background-color: #222;
+}
+
+body.dark-mode table th, body.dark-mode table td,
+body.dark-mode #pivotTable th, body.dark-mode #pivotTable td {
+  border-color: #444; /* Dark border color for visibility */
+  color: #e0e0e0; /* Light text color to contrast with the dark background */
+}
+
+/* Ensure the table headers are visible */
+body.dark-mode table th {
+  background-color:b; /* Keep header color or adjust */
+  color: white; /* Ensure header text is visible */
+}
+
+/* Adjusting table rows for visibility in dark mode */
+body.dark-mode table tr:nth-child(even) {
+  background-color: #333; /* Slightly lighter background for even rows */
+}
+
+body.dark-mode table tr:hover {
+  background-color: #555; /* Slightly darker hover effect for better contrast */
+}
+
+/* Button and form control adjustments for dark mode */
+body.dark-mode button {
+  background-color: #555; /* Button background in dark mode */
+  color: white; /* Ensure button text is white */
+}
+
+body.dark-mode button:hover {
+  background-color: #666; /* Darker hover state for buttons */
+}
